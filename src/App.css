@@ -82,8 +82,33 @@ p {
 }
 
 
+@media screen and (max-width: 480px){
+  .container {
+    max-width: 400px;
+    height: 400px;
+    margin-bottom: 100px;
+    gap: 15px;
+  }
 
+  h1 {
+    font-size: 14px;
+  }
 
+  p {
+    font-size: 28px;
+  }
+
+  .divider {
+    transform: scale(1.1);
+  }
+
+  .dice-icon {
+    transform: scale(2);
+    left: 44%;
+
+  }
+
+}
 
 
 

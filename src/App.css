@@ -18,7 +18,7 @@ html {
 
 body {
   background-color: var(--color-dark-blue);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,6 @@ body {
 }
 
 .container {
-  width: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,26 +34,28 @@ body {
   padding: 30px;
   border-radius: 10px;
   position: relative;
+  max-width: 400px;
 }
 
 h1 {
   color: var(--color-neon-green);
-  font-size: 10px;
+  font-size: 8px;
   font-weight: lighter;
   letter-spacing: 0.3rem;
+  text-transform: uppercase;
   
 }
 
 p {
-  max-width: 100%;
   color: var(--color-light-cyan);
   padding: 20px 0px;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
 }
 
-picture {
+.divider {
   padding-bottom: 20px;
+  transform: scale(0.75);
 }
 
 .dice-icon {
@@ -70,6 +71,14 @@ picture {
   bottom: -1rem;
   transform: translateX(-50%);
   cursor: pointer;
+}
+
+.dice-icon img {
+  transform: scale(0.75);
+}
+
+.dice-icon:hover{
+  box-shadow: 0 0 2rem hsla(150, 100%, 66%, 0.75);
 }
 
 

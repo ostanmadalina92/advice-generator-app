@@ -3,10 +3,12 @@ import { useContext } from "react";
 import { AdviceContext } from "../context/adviceContext";
 
 function Advice() {
-
-  const {advice} = useContext(AdviceContext);
+  const { advice, id } = useContext(AdviceContext);
   return (
+    <>
+      <h1>Advice #{id}</h1>
       <p>{advice}</p>
+    </>
   );
 }
 

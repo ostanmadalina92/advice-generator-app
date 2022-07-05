@@ -8,9 +8,8 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>Advice #</h1>
         <Advice />
-        <picture>
+        <picture className="divider">
           <source media="(min-width:768px)" srcSet={dividerDesktop}></source>
           <img src={dividerMobile} />
         </picture>
